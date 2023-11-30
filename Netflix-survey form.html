@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix Survey Form</title>
+        <link rel="stylesheet" href="/50 html-css projects/Netflix-survey form/Netflix-survey form.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">
+                Net
+                <span>Flix</span>
+                <!-- whitespace visible ???? -->
+            </h1>
+            <h3 class="description">Thank you for signing up at Netflix. Tell us more about yourself</h3>
+            <form
+                id="survey-form"
+                action="result.html"
+                method="GET"
+                target="_blank"
+            >
+                <!-- Name section -->
+                <div class="input-box">
+                    <label for="name" id="name-label">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        id="name"
+                        required
+                    >
+                </div>
+                <!-- Age section -->
+                <div class="input-box">
+                    <label for="number" id="number-label">Age</label>
+                    <input
+                        type="number"
+                        min="18"
+                        max="65"
+                        name="age"
+                        placeholder="Please enter your age"
+                        id="number"
+                        required
+                    >
+                </div>
+                <!-- Email section -->
+                <div class="input-box">
+                    <label for="email" id="email-label">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Please enter your email"
+                        id="email"
+                        required
+                    >
+                </div>
+                <!-- Content type section -->
+                <div class="input-box">
+                    <label for="dropdown" id="dropdown-label">Content type</label>
+                    <select name="content" id="dropdown">
+                        <option value="Movie">Movie</option>
+                        <option value="Series">Series</option>
+                    </select>
+                </div>
+                <!-- Movie type section -->
+                <div class="input-box">
+                    <label id="checkbox-movie-type">Movie type</label>
+                    <label for="comedy">
+                        <input
+                            type="checkbox"
+                            id="comedy"
+                            name="comedy"
+                            value="Comedy"
+                        >
+                        Comedy
+                    </label>
+                    <label for="action">
+                        <input
+                            type="checkbox"
+                            id="action"
+                            name="action"
+                            value="Action"
+                        >
+                        Action
+                    </label>
+                    <label for="romance">
+                        <input
+                            type="checkbox"
+                            id="romance"
+                            name="romance"
+                            value="Romance"
+                        >
+                        Romance
+                    </label>
+                </div>
+                <!-- Gender Section -->
+                <div class="input-box">
+                    <label id="gender-radiobtn">Gender</label>
+                    <label for="male">
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                        >
+                        Male
+                    </label>
+                    <label for="female">
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                        >
+                        Female
+                    </label>
+                    <label for="other">
+                        <input
+                            type="radio"
+                            id="other"
+                            name="gender"
+                            value="other"
+                        >
+                        Other
+                    </label>
+                </div>
+                <!-- Feedback Section -->
+                <div class="input-box">
+                    <label id="text-area">Feedback</label>
+                    <textarea
+                        name="message"
+                        id="feedback"
+                        cols="50"
+                        rows="5"
+                        placeholder="Please write your comment here...."
+                    ></textarea>
+                </div>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

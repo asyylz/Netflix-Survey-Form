@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.whats-on-netflix.com/wp-content/uploads/2021/08/14103843/netflix-library-photo-scaled.jpg);
+    color: white;
+    margin: 40px 40px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px 100px;
+    /* max-width: 1050px; */
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bowlby One SC', sans-serif;
+    padding-top: 15px;
+    letter-spacing: 5px;
+}
+
+.container span {
+    color: red;
+    font-family: 'Bowlby One SC', sans-serif;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.container form {
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding-top: 10px;
+}
+
+.container .input-box {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#name, #number, #email, #dropdown{
+    margin-top: 16px;
+    height: 36px;
+    width: 400px;
+    border: none;
+    padding: 10px;
+}
+#text-area {
+    margin-bottom: 10px;
+}
+
+#checkbox-movie-type, #gender-radiobtn {
+    margin-bottom: 10px;
+}
+
+.container label {
+    display: block;
+}
+
+#submit {
+    font-size: larger;
+    margin: 16px 0 16px 150px;
+    height: 45px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
